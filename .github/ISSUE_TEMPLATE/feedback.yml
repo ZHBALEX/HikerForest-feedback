@@ -1,0 +1,21 @@
+name: Feedback / 玩家反馈
+description: Share an idea, a bug, or what you enjoyed / 分享建议、问题或喜欢的地方
+title: '[Feedback] '
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type / 类型
+      options:
+        - Enjoyed it / 喜欢这个游戏
+        - Suggestion / 建议
+        - Bug / 问题
+    validations:
+      required: true
+  - type: textarea
+    id: thoughts
+    attributes:
+      label: Your feedback / 你的反馈
+      description: For bugs, include journey, difficulty and steps. All feedback is public.
+    validations:
+      required: true
